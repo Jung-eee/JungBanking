@@ -1,0 +1,36 @@
+CREATE TABLE Customer (
+	cid 	BIGINT 			PRIMARY KEY  AUTO_INCREMENT,
+	email 	VARCHAR(20)		NOT NULL,
+	passwd	VARCHAR(20)		NOT NULL,
+	name	VARCHAR(20)		NOT NULL,
+	ssn 	VARCHAR(14)		NOT NULL,
+	phone   VARCHAR(13)		NOT NULL,
+	regDate TIMESTAMP       NOT NULL	DEFAULT CURRENT_TIMESTAMP
+)AUTO_INCREMENT = 1001;
+
+SELECT * FROM Customer;
+
+CREATE TABLE Account(
+   aid      	BIGINT       PRIMARY KEY    AUTO_INCREMENT,
+   customerId 	BIGINT     	 NOT NULL,
+   accountNum   CHAR(13)	 NOT NULL,
+   balance   	BIGINT       NOT NULL   	DEFAULT 0.0,
+   interestRate DOUBLE       NOT NULL   	DEFAULT 0.0,
+   regDate      TIMESTAMP    NOT NULL       DEFAULT CURRENT_TIMESTAMP,
+   
+   CONSTRAINT Account_customerId_FK FOREIGN KEY (customerId) REFERENCES Customer(cid)
+)AUTO_INCREMENT = 3001;
+
+SELECT * FROM Account;
+
+5
+
+DROP TABLE Account;
+
+DELETE FROM Account WHERE aid = 3004;
+DELETE FROM Account WHERE aid = 3005;
+DELETE FROM Account WHERE aid = 3006;
+DELETE FROM Account WHERE aid = 3007;
+DELETE FROM Account WHERE aid = 3008;
+DELETE FROM Account WHERE aid = 3009;
+DELETE FROM Account WHERE aid = 3010;

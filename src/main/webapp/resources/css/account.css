@@ -1,0 +1,146 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'MonoplexKR-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_Monoplex-kr@1.0/MonoplexKR-Regular.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+body {
+	font-family: 'MonoplexKR-Regular';
+}
+.popup-wrap{
+  justify-content:center;
+  align-items:center;     
+  position:fixed;        
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;             
+  display:flex;
+  padding:15px; 
+  margin-top: 55px;
+}
+
+.popup{
+  width:100%;              
+  max-width:400px;         
+  border-radius:10px;       
+  overflow:hidden;         
+  background-color:#11264f; 
+  box-shadow: 5px 10px 10px 1px rgba(0,0,0,.3); 
+}
+
+.popup-head{
+  width:100%;
+  height:50px;  
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.head-title {
+	color: white;
+	font-weight: 800;
+}
+
+.popup-body{              
+  width:100%;
+  background-color:#ffffff; 
+}
+.body-content{             
+  width:100%;
+  padding:30px;           
+}
+.body-titlebox{            
+  text-align:center;        
+  width:100%;
+  height:40px;
+  margin-bottom:10px;  
+  padding-top: 24px;    
+}
+.deposit_acc {
+	width: 118px;
+    height: 28px;
+    text-align: center;
+}
+.body-contentbox{          
+  word-break:break-word;    
+  overflow-y:auto;          
+  min-height:100px;        
+  max-height:200px;   
+  text-align: center;  
+  padding-top: 34px;
+  padding-bottom: 30px;
+  margin-left: -40px; 
+}
+.boxs {
+ margin-left: 0;
+}
+.conbox {
+ padding: 0;
+}
+.depositMoney {
+	width: 118px;
+    height: 28px;
+}
+.popup-foot{                      
+  width:202%;
+  height:50px;
+}
+.pop-btn{ 
+  display:inline-flex;           
+  width:50%;                      
+  height:100%;                   
+  justify-content:center;        
+  align-items:center;             
+  float:left;                    
+  color:#ffffff;                 
+  cursor:pointer;                 
+}
+.pop-btn.confirm{                
+  border-right:1px solid #11264f;
+  background-color:  #11264f;
+}
+.cus_bal {
+	text-align: center;
+	padding: 18px;
+}
+.transfer {
+	font-weight: bold;
+	font-size: 18px;
+}
+.tran {
+	display: inline-block;
+	margin-bottom: 8px;
+}
+table {
+  border: 1px #a39485 solid;
+  font-size: .9em;
+  box-shadow: 0 2px 5px rgba(0,0,0,.25);
+  width: 80%;
+  border-collapse: collapse;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-left: 127px;
+}
+
+th {
+  text-align: center;
+}
+  
+tr {
+  font-weight: bold;
+  color: #fff;
+  background:#11264f;
+}
+  
+ td, th {
+  padding: 1em .5em;
+  vertical-align: middle;
+}
+  
+ td {
+  border-bottom: 1px solid rgba(0,0,0,.1);
+  background: #fff;
+  color: black;
+  text-align: center;
+}

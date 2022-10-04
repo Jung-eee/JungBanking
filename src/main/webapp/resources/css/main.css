@@ -1,0 +1,99 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'MonoplexKR-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_Monoplex-kr@1.0/MonoplexKR-Regular.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+}
+body {
+  background-color: #f9fafb;
+}
+.container {
+  padding: 100px 0;
+}
+
+.box {
+  width: 100%;
+  margin: 0px auto;
+  transform: translate3d(0px, 50px, 0px);
+}
+
+.flex-top{
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+}
+
+.bottom-flex{
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+}
+.main{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+ width: 100%;
+ max-width: 350px;
+ margin-bottom: 100px;
+}
+
+.main > a{
+	text-align: center;
+	color: black;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 200px;
+  height: 200px;
+  background-color: #edccf8;
+  border-radius: 26px;
+  margin-bottom: 30px;
+}
+.icon {
+  height: 100px;
+  width: 100px;
+  min-width: 100px;
+}
+.find {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 200px;
+  height: 200px;
+  background-color: #f2f4f6;
+  border-radius: 26px;
+  margin-bottom: 30px;
+}
+.service {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 200px;
+  height: 200px;
+  background-color: #f2f4f6;
+  border-radius: 26px;
+  margin-bottom: 30px;
+}
+.atm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 200px;
+  height: 200px;
+  background-color: #aeefd5;
+  border-radius: 26px;
+  margin-bottom: 30px;
+}
+.seven_span {
+	font-family: 'MonoplexKR-Regular';
+	font-size: 20px;
+}
